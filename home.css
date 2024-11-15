@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: white;
+   display: flex;
+   align-items: center;
+    padding:10px;
+    justify-content: space-around;
+   width: 100%;
+   position: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    margin: 15px;
+    font-size: 14px;
+}
+a:hover{
+    color: red;
+}
+a{
+    transition: all 0.5s;
+}
+svg:hover{
+    fill: red;
+    cursor: pointer;
+}
+svg{
+    transition: all 0.5s;
+}
+.logo{
+    font-size:3vw;
+}
+.menu-nav{
+    display: none;
+}
+.menu-navbar{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 0;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(243, 238, 238, 0.879);
+    width: 50%;
+    overflow-y: scroll;
+    height: 100%;
+}
+.menu-navbar li{
+    list-style: none;
+}
+.menu-navbar a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}.menu-navbar a:hover{
+    color: red;
+}
+@media(max-width:780px){
+    .mobile-none{
+        display: none;
+    }
+    .menu-nav{
+        display: block;
+    }
+}
+#app{
+    height: 100vh;
+    z-index: -2;
+}
+/*hero-section*/
+.hero-section{
+    background-image: url(./images/choco.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    width: 100%;  
+   padding: 80px;
+   height: 50vw;
+}
+.caption{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.caption h3{
+    font-family:cursive;
+    font-size: 6vw;
+}
+.caption .c{
+    font-weight: bold;
+    font-size: 3vw;
+}
+.caption .text{
+    font-weight: lighter;
+    font-size: 2.5vw;
+    text-align: center;
+    
+}
+.caption a{
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.caption a:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+/*article*/
+article{
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px;
+    
+    
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+article h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.img-col img{
+    width: 100%;
+    object-fit: cover;
+}
+.img-col{
+    border: 1px solid black;
+    padding: 15px;
+    
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+@media(max-width:700px){
+    .gallery{
+        flex-wrap: wrap;
+    }
+}
+.cake-caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+ 
+}
+.cake-caption p{
+    font-weight: lighter;
+    font-family: cursive;
+    font-size: 12px;
+}
+.cake-caption h4{
+    font-size: 15px;
+}
+.cake-caption a{
+    color: black;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.cake-caption a:hover{
+   color: red;
+}
+/*products*/
+#products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;  
+}
+#products .product{
+    flex: 1 1 calc(33.3% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding:30px;
+    text-align: center; 
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    background-color: white;
+   
+}
+#products .product h3{
+    margin-top: 12px;
+    font-size: 15px;
+}
+#products .product p{
+    font-family: cursive;
+    font-size: 12px;
+    margin-top: 10px;
+}
+#products .product button{
+    background-color: black;
+    transition: all 0.5s;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 7px;
+    font-size: 10px;
+}
+#products .product button:hover{
+    background-color: red;
+    color: white;
+}
+.produce{
+    margin-top: 20px;
+    background-color: whitesmoke;
+    padding-top: 20px;
+}
+.produce h2{
+    text-align: center;
+    
+}
+@media(max-width:768px){
+    #products .product{
+        flex:1 1 calc(50% - 20px);
+    } 
+}
+@media(max-width:480px){
+    #products .product{
+        flex:1 1 100%;
+    } 
+}
+/*cart*/
+#cart{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(243, 238, 238, 0.879);
+    width: 50%;
+    overflow-y: scroll;
+    height: 100%;
+}
+#cart button{
+    color:white;
+    background-color: black;
+    border:none;
+    padding: 05px 10px;
+    border-radius:7px;
+    margin: 10px;
+    transition: all 0.5s;
+}
+#cart button:hover{
+    background-color: red;
+}
+#cart ul li{
+    padding:10px;
+    border-bottom: 1px solid #313030eb;
+}
+#cart li{
+    list-style: none;
+}
+/*order*/
+#order-form{
+    background-color: rgba(0, 0, 0, 0.375);
+    mix-blend-mode: blur(40px);
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    width: 50%;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+}
+#order-form input{
+    border: none;
+    border-radius: 7px;
+    margin: 10px;
+    padding: 10px;
+}
+#order-form button{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    transition:all 0.5s;
+}
+#order-form button:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+#order-confirmation{
+    position: sticky;
+    font-weight:bold;
+    text-align:center;
+}
+#cancle-order{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    transition:all 0.5s; 
+}
+/*about us*/
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 20px;
+    padding: 15px;
+}
+.about-us p{
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    
+    font-family: cursive;
+}
+.about-us h2{
+    margin-bottom: 13px;
+    margin-top: 10px;
+    font-size: 4vw;
+}
+span{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-us a{
+    transition: all 0.5s;
+    color:black;
+    margin-top: 20px;
+    font-family: cursive;
+    font-size: 12px;
+}
+.about-us a:hover{
+    color: red;
+}
+/*contact us*/
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 35px;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us label{
+    margin: 10px 0;
+}
+.contact-us label, .input{
+    display: block;
+    align-self: start;
+    justify-self: self-start;
+}
+.input{
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 10px 20px 10px 5px;
+    width: 90%;
+}
+#contact-message{
+    padding-bottom: 50px;
+}
+#contact-submit{
+    margin-top: 15px;
+    color:white;
+    background-color: black;
+    border:none;
+    transition: all 0.5s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+#contact-submit:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+/*footer*/
+footer{
+    background-color: black;
+    color: white;
+    display:flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media(max-width:680px){
+    footer{
+        flex-wrap: wrap;
+    }
+}
+.footer-text p{
+    font-size: 12px;
+    line-height: 25px;
+}
+.stay-connected{
+    margin-top: 30px;
+}
+.stayconnected-icons a{
+    text-decoration: none;
+   
+    margin: 10px;
+}
+.stayconnected-icons{
+    margin-top: 10px;
+}
+.footer-img img{
+    width: 100%;
+}
+.footer-text{
+    width: 100%;
+}
+/*login*/
+#auth-container{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/pexels-reginaferraz-6133303.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#register-form{
+    margin: auto;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.267);
+    mix-blend-mode: blur(50px);
+    color: white;padding: 50px 20px;
+    border-radius: 12px;
+}
+#register-form input{
+    display: block;
+    margin: 20px 0px;
+    padding: 17px 10px 17px 7px;
+    border: none;
+    border-radius: 20px;
+
+}
+#register-form button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    background-color: white;
+}
+#login-form{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(39, 37, 37, 0.768);
+    mix-blend-mode: blur(20px);
+    color: white;padding: 50px 20px;
+    border-radius: 12px;
+}
+#login-form button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    background-color: white;
+}
+#login-form input{
+    display: block;
+    margin: 20px 0px;
+    padding: 17px 10px 17px 7px;
+    border: none;
+    border-radius: 20px;  
+    justify-self: center;
+    align-self: center;
+}

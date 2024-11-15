@@ -1,0 +1,21 @@
+[
+    {
+        "id":1, "name":"CHOCO CAKES","price":30, "image":"images/pexels-media-10865978.jpeg"
+    },
+    {
+        "id":2, "name":"BUTTER CAKES","price":20, "image":"images/simple cake.jpeg"
+    },
+    
+    {
+        "id":3, "name":"WEDDING CAKES","price":30, "image":"images/occassional cake.jpeg"
+    } ,
+    {
+        "id":4, "name":"CUP CAKES","price":40, "image":"images/chocolate cup cake (1).jpg"
+    } ,
+    {
+        "id":5, "name":"VELVERT CAKES","price":60, "image":"images/2redvelvet.jpeg"
+    } ,
+    {
+        "id":6, "name":"ICE-CREAM","price":10, "image":"images/IMG-20240306-WA0011.jpg"
+    } 
+]
